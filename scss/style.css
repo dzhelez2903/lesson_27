@@ -54,20 +54,23 @@
   font-size: 18px;
 }
 
-.task div form {
+.task div input {
   width: 80%;
   height: 30px;
   background-color: white;
-  position: relative;
-  left: 10%;
-  top: 5%;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
 }
 
-.task div form button {
+.task div button {
   width: 50%;
   height: 30px;
   background-color: #3c84e6;
-  position: relative;
-  top: 110%;
+  border-radius: 5px;
+  font-size: 18px;
+  color: white;
+  margin-top: 5px;
 }
 /*# sourceMappingURL=style.css.map */
