@@ -54,7 +54,21 @@
   font-size: 18px;
 }
 
-.task div input {
+.task div table {
+  width: 100%;
+  color: white;
+}
+
+.task div table td {
+  width: 33.3%;
+  text-align: center;
+}
+
+.task div table input {
+  margin-right: 5px;
+}
+
+.task div .input_text {
   width: 80%;
   height: 30px;
   background-color: white;
@@ -62,6 +76,10 @@
   border-radius: 5px;
   font-size: 16px;
   text-align: center;
+}
+
+.task div select {
+  margin-top: 5px;
 }
 
 .task div button {
