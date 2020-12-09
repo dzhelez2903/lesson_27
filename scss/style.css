@@ -82,6 +82,12 @@
   margin-top: 5px;
 }
 
+.task div .answer {
+  margin-top: 10px;
+  font-size: 20px;
+  color: orange;
+}
+
 .task div button {
   width: 50%;
   height: 30px;
