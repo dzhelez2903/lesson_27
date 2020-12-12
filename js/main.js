@@ -12,7 +12,7 @@ button.onclick = function () {
     document.getElementById("task_1_answer").textContent = "юноша";
   } else if (x >= 19 && x <= 59) {
     document.getElementById("task_1_answer").textContent = "муж";
-  } else if (x > 60) {
+  } else if (x >= 60) {
     document.getElementById("task_1_answer").textContent = "старец";
   }
 };
