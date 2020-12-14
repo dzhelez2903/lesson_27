@@ -1,6 +1,6 @@
 //Task1
-button = document.getElementById("task_1_button");
-button.onclick = function () {
+button1 = document.getElementById("task_1_button");
+button1.onclick = function () {
   let x = document.getElementById("task_1").value;
   if (isNaN(x)) {
     document.getElementById("task_1_answer").textContent = "Циферки введи!";
@@ -17,14 +17,15 @@ button.onclick = function () {
   }
 };
 //Task2
-button = document.getElementById("task_2_button");
-button.onclick = function () {
+button2 = document.getElementById("task_2_button");
+button2.onclick = function () {
   let symbol = [")", "!", "@", "#", "$", "%", "^", "&", "*", "("];
   let n = document.getElementById("task_2").value;
-  if (document.getElementById("task_2").validity.rangeOverflow) {
-    document.getElementById("task_2_answer").textContent =
-      "Не рви кіньми! По одному!";
-  } else if (n == 0) {
-    document.getElementById("task_2_answer").textContent = symbol[0];
+  if (!document.getElementById("task_2").checkValidity()) {
+    document.getElementById(
+      "task_2_answer"
+    ).textContent = document.getElementById("task_2").validationMessage;
+  } else {
+    document.getElementById("task_2_answer").textContent = symbol[n];
   }
 };
