@@ -16,3 +16,15 @@ button.onclick = function () {
     document.getElementById("task_1_answer").textContent = "старец";
   }
 };
+//Task2
+button = document.getElementById("task_2_button");
+button.onclick = function () {
+  let symbol = [")", "!", "@", "#", "$", "%", "^", "&", "*", "("];
+  let n = document.getElementById("task_2").value;
+  if (document.getElementById("task_2").validity.rangeOverflow) {
+    document.getElementById("task_2_answer").textContent =
+      "Не рви кіньми! По одному!";
+  } else if (n == 0) {
+    document.getElementById("task_2_answer").textContent = symbol[0];
+  }
+};
