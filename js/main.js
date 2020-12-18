@@ -41,9 +41,9 @@ button3.onclick = function () {
     document.getElementById(
       "task_3_answer"
     ).textContent = document.getElementById("task_3").validationMessage;
-  } else if (a == b && b == c && c == a) {
+  } else if (a == b || b == c || c == a) {
     document.getElementById("task_3_answer").textContent = "есть!";
-  } else if (a !== b && b !== c && c !== a) {
+  } else {
     document.getElementById("task_3_answer").textContent = "неть!";
   }
 };
