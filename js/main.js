@@ -33,9 +33,17 @@ button2.onclick = function () {
 button3 = document.getElementById("task_3_button");
 button3.onclick = function () {
   let x = document.getElementById("task_3").value;
+  let y = String(x).split("");
+  let a = y[0] / 1;
+  let b = y[1] / 1;
+  let c = y[2] / 1;
   if (!document.getElementById("task_3").checkValidity()) {
     document.getElementById(
       "task_3_answer"
     ).textContent = document.getElementById("task_3").validationMessage;
-  } else console.log(x);
+  } else if (a == b && b == c && c == a) {
+    document.getElementById("task_3_answer").textContent = "есть!";
+  } else if (a !== b && b !== c && c !== a) {
+    document.getElementById("task_3_answer").textContent = "неть!";
+  }
 };
