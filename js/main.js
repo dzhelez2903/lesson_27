@@ -29,3 +29,13 @@ button2.onclick = function () {
     document.getElementById("task_2_answer").textContent = symbol[n];
   }
 };
+//Task3
+button3 = document.getElementById("task_3_button");
+button3.onclick = function () {
+  let x = document.getElementById("task_3").value;
+  if (!document.getElementById("task_3").checkValidity()) {
+    document.getElementById(
+      "task_3_answer"
+    ).textContent = document.getElementById("task_3").validationMessage;
+  } else console.log(x);
+};
