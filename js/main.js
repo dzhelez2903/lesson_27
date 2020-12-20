@@ -47,3 +47,19 @@ button3.onclick = function () {
     document.getElementById("task_3_answer").textContent = "неть!";
   }
 };
+//Task5
+button5 = document.getElementById("task_5_button");
+button5.onclick = function () {
+  let n = document.getElementById("task_5").value;
+  let x = n.toLowerCase().split(" ");
+  let y = x.join("");
+  let z = y.split("");
+  let k = z.reverse();
+  let a = z.toString().split(",").join("");
+  if (y == a) {
+    document.getElementById("task_5_answer").textContent = "Палиндром!";
+  } else {
+    document.getElementById("task_5_answer").textContent =
+      "Не он!!! Еще попытки будут? :-)";
+  }
+};
