@@ -34,9 +34,9 @@ button3 = document.getElementById("task_3_button");
 button3.onclick = function () {
   let x = document.getElementById("task_3").value;
   let y = String(x).split("");
-  let a = Number(y[0]);
-  let b = Number(y[1]);
-  let c = Number(y[2]);
+  let a = y[0];
+  let b = y[1];
+  let c = y[2];
   if (!document.getElementById("task_3").checkValidity()) {
     document.getElementById(
       "task_3_answer"
