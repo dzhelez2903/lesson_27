@@ -55,18 +55,11 @@ button5.onclick = function () {
   let y = x.join("");
   let z = y.split("");
   let k = z.reverse();
-  let a = z.toString().split(",").join("");
+  let a = z.join("");
   if (y == a) {
     document.getElementById("task_5_answer").textContent = "Палиндром!";
   } else {
     document.getElementById("task_5_answer").textContent =
       "Не он!!! Еще попытки будут? :-)";
   }
-  console.log (n)
-  console.log (x)
-  console.log (y)
-  console.log (z)
-  console.log (k)
-  console.log (a)
-
 };
