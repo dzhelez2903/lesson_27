@@ -62,4 +62,11 @@ button5.onclick = function () {
     document.getElementById("task_5_answer").textContent =
       "Не он!!! Еще попытки будут? :-)";
   }
+  console.log (n)
+  console.log (x)
+  console.log (y)
+  console.log (z)
+  console.log (k)
+  console.log (a)
+
 };
